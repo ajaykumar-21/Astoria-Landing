@@ -5,6 +5,7 @@ import LocationInfo from "./components/LocationInfo";
 import LeadForm from "./components/LeadForm";
 import Amenities from "./components/Amenities";
 import BuilderInfo from "./components/BuilderInfo";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Amenities />
       <LocationInfo />
       <BuilderInfo />
+      <Footer />
     </div>
   );
 }
