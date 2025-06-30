@@ -1,22 +1,34 @@
+import { Menu } from "lucide-react";
+
 const HeroSection = () => {
   return (
-    <section
-      className="bg-cover bg-center h-screen text-white relative"
-      style={{
-        backgroundImage: `url('/assets/Astoria-Royals-Landing-Page-Desktop.png')`,
-      }}
-    >
-      <div className="absolute inset-0 bg-black/50"></div>
-      <div className="relative z-10 max-w-5xl mx-auto px-4 py-32 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          Royal living reimagined
-        </h1>
-        <p className="mt-4 text-lg md:text-xl">
-          Luxurious 3 & 4 BHK homes in Ravet. Nearing Possession.
-        </p>
-        <button className="mt-8 px-6 py-3 bg-yellow-500 text-black font-semibold rounded hover:bg-yellow-400 transition">
-          Schedule a Site Visit
-        </button>
+    <section className="relative w-full min-h-screen overflow-hidden text-white">
+      {/* Main Hero Image */}
+      <img
+        src="/assets/Astoria-Royals-Landing-Page-Desktop.png"
+        alt="Hero"
+        className="w-full h-full object-cover absolute inset-0 z-0"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 z-0" />
+
+      {/* Top Navigation */}
+      <div className="relative z-10 flex justify-between items-center px-6 md:px-12 py-4">
+        {/* Left Branding */}
+        <div className="flex items-center space-x-4">
+          {/* Uncomment logo when available */}
+          {/* <img src="/assets/astoria-logo.png" alt="Astoria Royals" className="h-10" /> */}
+          <img src="/assets/Nirman.png" alt="Nirman Greens" className="h-16" />
+        </div>
+
+        {/* Right Action */}
+        <div className="flex items-center space-x-4">
+          <button className="border px-4 py-1 text-sm uppercase tracking-wide">
+            Schedule A Site Visit
+          </button>
+          <Menu className="w-6 h-6" />
+        </div>
       </div>
     </section>
   );
