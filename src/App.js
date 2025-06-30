@@ -1,7 +1,7 @@
 import "./App.css";
 import HeroSection from "./components/HeroSection";
 import ProjectDetails from "./components/ProjectDetails";
-// import LocationInfo from "./components/LocationInfo";
+import LocationInfo from "./components/LocationInfo";
 import LeadForm from "./components/LeadForm";
 import Amenities from "./components/Amenities";
 
@@ -12,7 +12,7 @@ function App() {
       <ProjectDetails />
       <LeadForm />
       <Amenities />
-      {/* <LocationInfo /> */}
+      <LocationInfo />
     </div>
   );
 }
