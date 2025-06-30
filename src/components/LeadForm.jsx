@@ -78,13 +78,13 @@ function LeadForm() {
       }
 
       // 2. Send to your backend DB (optional if live)
-    //   await fetch("https://your-backend-url.com/api/leads", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(formData),
-    //   });
+      await fetch("https://astoria-app.onrender.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       setFormData({ name: "", email: "", phone: "" });
     } catch (err) {
